@@ -12,7 +12,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={`contenedor ${styles.barra}`}>
         <Link href="/">
-          <Image src="img/logo.svg" width={300} height={40} alt="Imagen logotipo"/>
+          <Image src="/img/logo.svg" width={300} height={40} alt="Imagen logotipo"/>
         </Link>
         <nav className={styles.navegacion}>
           <Link 
