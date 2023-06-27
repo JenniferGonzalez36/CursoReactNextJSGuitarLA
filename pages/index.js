@@ -9,7 +9,6 @@ export default function Home() {
         descritption = 'Blog de música, venta de guitarras y más'
       >
         <h1>INDEX</h1>
-        <Link href="/nosotros">Nosotros</Link>
       </Layout>
     </>
   )
