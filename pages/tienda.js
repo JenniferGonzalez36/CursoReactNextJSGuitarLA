@@ -1,16 +1,46 @@
 import React from 'react'
 import Layout from '../components/layout'
+import ListadoGuitarras from '../components/listado-guitarras'
 
-const Tienda = () => {
+/*export async function getStaticProps(){
+  const respuesta = await fetch(`${process.env.API_URL}/guitarras?populate=imagen`);
+  const {data: guitarras} = await respuesta.json();
+
+  return {
+    props: {
+      guitarras
+    }
+  }
+}*/
+
+
+export async function getServerSideProps(){
+  const respuesta = await fetch(`${process.env.API_URL}/guitarras?populate=imagen`);
+  const {data: guitarras} = await respuesta.json();
+
+  return {
+    props: {
+      guitarras
+    }
+  }
+}
+
+
+export default function Tienda({guitarras}) {
+  console.log(guitarras);
+
   return (
     <Layout
       title = 'Tienda Virtual'
       descritption = 'Tienda virtual, venta de guitarras, instrumentos, GuitarLA'
     >
-        <h1>TIENDA</h1>
+        <main className='contenedor'>
+          <h1 className='heading'>Nuestra Colección</h1>
+          <ListadoGuitarras
+            guitarras = { guitarras }
+          />
+        </main>
     </Layout>
     
   )
 }
-
-export default Tienda
