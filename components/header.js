@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from '../styles/header.module.css'
 
-export const Header = () => {
+const Header = () => {
 
   const router = useRouter();
 
@@ -36,3 +36,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header;

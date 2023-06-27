@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '../components/layout'
+import Layout from '../components/layout'
 
 const Tienda = () => {
   return (
@@ -7,7 +7,7 @@ const Tienda = () => {
       title = 'Tienda Virtual'
       descritption = 'Tienda virtual, venta de guitarras, instrumentos, GuitarLA'
     >
-        <h1>Tienda Virtual</h1>
+        <h1>TIENDA</h1>
     </Layout>
     
   )
