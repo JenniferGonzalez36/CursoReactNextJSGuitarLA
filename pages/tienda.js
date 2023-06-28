@@ -27,8 +27,6 @@ export async function getServerSideProps(){
 
 
 export default function Tienda({guitarras}) {
-  console.log(guitarras);
-
   return (
     <Layout
       title = 'Tienda Virtual'
